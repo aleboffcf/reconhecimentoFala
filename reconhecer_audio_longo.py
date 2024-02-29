@@ -7,7 +7,7 @@ def tratar_audio(rec, audio):
     try:
         texto = rec.recognize_google(audio, language="pt-BR")
         print(texto)
-        if "encerrar gravação" in texto:
+        if "encerrar gravação aqui" in texto:
             acabou = True
     except:
         print("Não escutei")
